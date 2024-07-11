@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Shaadi Card 1</title>
+    <style>
+      
+      body{
+        background-image: url('img/background\ img.jpg');
+        background-size: cover;          /* Cover the entire body */
+        background-repeat: no-repeat;    /* Do not repeat the image */
+        background-position: center;     /* Center the image */
+        background-attachment: fixed;    /* Make the background fixed on scroll */
+      }
+        /* card css start*/
+        .invitation {
+            padding: 20px;
+           /* Optional: Rounded corners */
+        }
+
+  .card  {
+    height: 700px; /* Increase this value as needed */
+   
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            border: 2px solid #000;
+            border-color: #f1c70bdc;
+            box-shadow: 0 4px 8px rgba(228, 2, 2, 0.89);
+            border-radius: 10px;
+           
+        }
+        .card-body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        .card img {
+            height: 100px;
+            width: 100px;
+            margin-bottom: 15px;
+        }
+        .card-title{
+            font-family: cursive;
+            font-size: 50px;
+            
+        }
+
+        
+        /* card css ends*/
+        /* all the content text white css start*/
+
+ /* all the content text white css ends*/
+ .text{
+    font-size: 20px;
+    font-weight: bold;
+ }
+
+/* animation css start */
+ .wedding-card-container {
+    position: relative;
+    padding: 20px;
+    overflow: hidden;
+  }
+  
+  .wedding-card-container::before,
+  .wedding-card-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 2px solid transparent;
+    border-image: linear-gradient(45deg, gold, deeppink, purple);
+    border-image-slice: 1;
+    animation: borderRotate 6s linear infinite;
+  }
+  
+  .wedding-card-container::after {
+    animation-duration: 10s;
+    animation-direction: reverse;
+  }
+  
+  @keyframes borderRotate {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  .flower {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: radial-gradient(circle, #ff9a9e 0%, #fad0c4 100%);
+    border-radius: 50%;
+    opacity: 0.7;
+    animation: flowerFloat 10s ease-in-out infinite;
+  }
+  
+  @keyframes flowerFloat {
+    0%, 100% { transform: translate(0, 0) rotate(0deg); }
+    25% { transform: translate(10px, -10px) rotate(45deg); }
+    50% { transform: translate(0, -20px) rotate(90deg); }
+    75% { transform: translate(-10px, -10px) rotate(45deg); }
+  }
+
+/* animation css ends */
+
+  /*design for four corner  image start*/
+  .wedding-card-container {
+    position: relative;
+  }
+
+  .corner-design {
+    position: absolute;
+    height: 50px; /* Adjust the height as needed */
+    width: 50px; /* Adjust the width as needed */
+  }
+
+  .corner-design.top-left {
+    top: 0;
+    left: 0;
+    transform: rotate(0deg);
+  }
+
+  .corner-design.top-right {
+    top: 0;
+    right: 0;
+    transform: rotate(90deg);
+  }
+
+  .corner-design.bottom-left {
+    bottom: 0;
+    left: 0;
+    transform: rotate(-90deg);
+  }
+
+  .corner-design.bottom-right {
+    bottom: 0;
+    right: 0;
+    transform: rotate(180deg);
+   
+  }
+
+  .card {
+    background-color: rgb(173, 98, 98);
+    position: relative;
+  
+  }
+
+  .card img {
+    height: 100px;
+    width: 100px;
+    
+  }
+
+  .mantra, .card-body {
+    text-align: center;
+    color: white;
+  }
+
+  .mantra p, .card-title, .card-text, .card-body h5, .card-body p {
+    margin: 10px 0;
+  }
+  /*design for four corner  image ends*/
+
+/* media queary for text start */
+  @media (max-width: 613px){
+    .text {
+      font-size: 14px; /* Adjust the size as needed */
+    }
+  } 
+
+  @media (max-width: 613px){
+    .card-title {
+      font-size: 18px; /* Adjust the size as needed */
+    }
+  } 
+  /* media queary for text ends*/
+
+/* part 2 design start */
+.card1 {
+  box-shadow: 10px 0 20px rgba(0, 0, 0, 0.2), -10px 0 20px rgba(0, 0, 0, 0.2); /* Horizontal shadow */
+  transition: transform 0.2s; /* Smooth transition */
+  background-color: maroon;
+ 
+}
+
+.card1:hover {
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+/* part 2 design ends*/
+h3{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color:white;
+}
+p{
+  font-weight: bold;
+}
+h5{
+ font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.p{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+}
+/* section baal css start */
+.bal {
+  border-radius: 15px;
+  border: 2px solid #FFA500; /* Orange border color */
+  transition: box-shadow 0.3s ease;
+  
+}
+
+.bal:hover {
+   box-shadow: 0 4px 8px rgba(248, 212, 5, 0.897); /* Shadow effect on hover */
+}
+/* section baal css ends */
+
+/* section 4 start */
+
+
+/* section 4 ends */
+
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+  <!-- wedding start -->
+    <div class="wedding-card-container">
+    <div class="row invitation">
+        <div class="col-sm-12"> 
+          <div class="card" style="background-color:  maroon; ">
+            <img src="img/card_design_img-removebg-preview.png" class="corner-design top-left" alt="Corner Design">
+            <img src="img/card_design_img-removebg-preview.png" class="corner-design top-right" alt="Corner Design">
+            <img src="img/card_design_img-removebg-preview.png" class="corner-design bottom-left" alt="Corner Design">
+            <img src="img/card_design_img-removebg-preview.png" class="corner-design bottom-right" alt="Corner Design">        
+
+            <img src="img/ganesha.avif" class="img-fluid rounded-pill" height="100px" width="100px">
+            <div class="mantra text-center text-white">
+              <p>|| श्री गणेशाय नमः ||<br>
+                वक्रतुंड महाकाय सूर्यकोटि समप्रभः।<br>
+                निर्विघ्नं कुरु मे देव सर्वकार्येषु सर्वदा॥</p>
+            </div>
+            <div class="card-body">
+             
+              <h5 class="card-title text-white ">Rajesh & Riya</h5>
+              <p class="card-text text-white text p" >Please celebrate with us the freshness of new life<br>
+            and new love as we solicit the pleasure of your<br>
+        company with family and friends on the <br>
+    auspicious occasion</p>
+             <h5 class=" text-white text p">SATURDAY , 21st AUGUST 2023 <br>
+            AT 5 'O' CLOCK IN THE EVENING </h5>
+
+            <h5 class=" text-white text p">Venue<br>
+            ABC HOUSE, MG Road, Pune-411019</h5>
+
+            <p class="text-white text p">Invited By <br>
+            Borate & Family</p>
+
+            </div>
+          </div>
+        </div>
+       
+      </div>
+   </div>
+  <!-- wedding start -->
+
+
+ <div class="container">
+  <div class="row" style="display: flex; justify-content: center; align-items: center;">
+    <div class="col-md-4">
+     <div class="card1 m-1">
+      <img src="img/engagement img.png" class="card-img-top" alt="...">
+     
+      <div class="data p-2 text-center">
+        <h3>Engagement  Invitation </h3>
+        <p class="text-white p">Date : [24-07-2024]</p>
+        <p class="text-white p">Time : 7:00 P.M</p>
+        <p class="text-white p">Menu : Nandan Place </p>
+      </div>
+     </div>
+    </div>
+      <div class="col-md-4">
+         <div class="card1 m-1">
+          <img src="img/haldi img.jpg" class="card-img-top" alt="...">
+          <div class="data p-2 text-center">
+            <h3 >Haldi Invitation </h3>
+            <p class="text-white p">Date : [25-07-2024]</p>
+            <p class="text-white p">Time : 5:00 P.M</p>
+            <p class="text-white p">Menu : Nandan Place </p>
+          </div>
+     </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card1 m-1">
+            <img src="img/mehendi img.jpg" class="card-img-top" alt="...">
+            <div class="data p-2 text-center">
+              <h3>Mehendi Invitation </h3>
+              <p class="text-white p">Date : [26-07-2024]</p>
+              <p class="text-white p">Time : 5:00 P.M</p>
+              <p class="text-white p">Menu : Nandan Place </p>
+            </div>
+          </div>
+          </div>
+    
+  </div>
+ </div>
+ <!-- wedding ends-->
+
+
+ <!-- wedding start section 2-->
+ <div class="container mt-5">
+  <div class="row" style="display: flex; justify-content: center; align-items: center;">
+    <div class="col-md-4">
+     <div class="card1 m-1">
+      <img src="img/barat.webp" class="card-img-top" alt="..." style="height: 240px;">
+     
+      <div class="data p-2 text-center">
+        <h3>Baraat Invitation </h3>
+        <p class="text-white p">Date : [27-07-2024]</p>
+        <p class="text-white p">Time : 5:00 P.M</p>
+        <p class="text-white p">Menu : Home </p>
+      </div>
+     </div>
+    </div>
+        <div class="col-md-4">
+          <div class="card1 m-1">
+            <img src="img/shubh vivah img.jpg"  style="height: 200px;" class="card-img-top" alt="...">
+            <div class="data p-2 text-center pt-5">
+              <h3 class="text-white">Shubh Vivah Invitation </h3>
+              <p class="text-white p">Date : [28-07-2024]</p>
+              <p class="text-white p">Time : 7:00 P.M</p>
+              <p class="text-white p">Menu : Nandan Place </p>
+            </div>
+          </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card1 m-1">
+             <img src="img/vadhu.jpg" class="card-img-top" alt="..." >
+             <div class="data p-2 text-center">
+               <h3>Vadhu Aagman Invitation </h3>
+               <p class="text-white p">Date : [29-07-2024]</p>
+               <p class="text-white p">Time : 8:00 P.M</p>
+               <p class="text-white p" >Menu : Home </p>
+             </div>
+        </div>
+           </div>
+    
+  </div>
+ </div>
+<!-- wedding ends section 2-->
+<!-- section 3 start -->
+  <div class="container mt-5 p-5" style="background-color: maroon;   border-radius: 15px;">
+    <div class="row text-white"  style="display: flex; justify-content-space: between; align-items: center;">
+      <div class="col-md-6">
+<div class="bal p-4" style="background-color: rgba(240, 174, 7, 0.568);">
+ <p class="p">How did our little feet come to forget us? Don't forget to come to uncle's wedding.</p>
+ <h5 class="p">Ayush, Mahi</h5>
+ <img src="img/smile_img-removebg-preview (1).png" height="50px;" width="50px;">
+</div>
+      </div>
+    
+      <div class="col-md-6 mt-2">
+        <div class="bal p-4" style="background-color: rgba(240, 174, 7, 0.568);">
+          <p class="p">Will drink cold drinks, eat popcorn and make fun at uncle's wedding.</p>
+          <h5 class="p">Mayank, Riya</h5>
+          <img src="img/smile_img-removebg-preview (1).png" height="50px;" width="50px;">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- section 3 ends -->
+
+<!-- section  4 start-->
+<div class="container mt-5 p-5" style="background-color: maroon;   border-radius: 15px;">
+  <div class="row text-white"  style="display: flex; justify-content-space: between; align-items: center;">
+    <p></p>
+    
+    <div class="col-md-12">
+<div class="bal p-3" style="background-color: rgba(240, 174, 7, 0.568);">
+<div class="row">
+  <div class="col-md-3">
+    <p class="p">Dear relative,</p>
+  </div>
+  <div class="col-md-3 mt-5">
+    <p class="p">By God's infinite mercy</p>
+  </div>
+</div>
+<!-- doli start -->
+<div class="row mt-5 text-center align-items-center">
+  <div class="col-md-3">
+    <p class="p">DESIROUS OF SEEING,<br></p>
+    <p class="p">
+      Ashish Garg<br>
+      Hemlata Garg<br>
+      Vinay Agarwal
+    </p>
+  </div>
+  <div class="col-md-6">
+    <img src="img/boy-removebg-preview.png" class="img-fluid" style="max-height: 70%; max-width: 70%;">
+  </div>
+  <div class="col-md-3">
+    <p class="p">WELCOMING</p>
+    <p class="p">
+      Arvind Singhal<br>
+      Radha Singhal
+    </p>
+  </div>
+</div>
+<!-- doli end -->
+
+
+</div>
+    </div>
+  
+  
+  </div>
+</div>
+
+<!-- section  4 end-->
+
+
+<!--Address  section 5 start -->
+<div class="container mt-5 p-5" style="background-color: maroon;   border-radius: 15px;">
+  <div class="row text-white"  style="display: flex; justify-content-space: between; align-items: center;">
+   <div class="col-md-12">
+    <div class="bal p-3" style="background-color: rgba(240, 174, 7, 0.568);">
+      <div class="row" style="display: flex; justify-content:center; ">
+        <div class="col-md-5">
+          <h2 class="pt-5 p">Address</h2>
+          <p class="pt-4 p">Hotel SAYAJI, MAGENTO MALL<BR>
+            AVANTI VIHAR , RAIPUR<BR>
+            CHATTISGARH
+          </p>
+          <div class="social-icons pb-3" style="margin-top: 20px;">
+            <a href="https://facebook.com" style="margin-right: 10px; text-decoration: none; color: white;">
+              <i class="fab fa-facebook-f" style="font-size: 24px;"></i>
+            </a>
+            <a href="https://twitter.com" style="margin-right: 10px; text-decoration: none; color: white;">
+              <i class="fab fa-twitter" style="font-size: 24px;"></i>
+            </a>
+            <a href="https://instagram.com" style="margin-right: 10px; text-decoration: none; color: white;">
+              <i class="fab fa-instagram" style="font-size: 24px;"></i>
+            </a>
+            <a href="https://linkedin.com" style="margin-right: 10px; text-decoration: none; color: white;">
+              <i class="fab fa-linkedin-in" style="font-size: 24px;"></i>
+            </a>
+          </div>
+        </div>
+        
+        
+        <div class="col-md-5">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3570.7952471245617!2d80.27712277442508!3d26.494536677938314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399c3826d4ebf859%3A0xe9e2ed37cc371552!2sReal%20Victory%20Groups!5e0!3m2!1sen!2sin!4v1715423230207!5m2!1sen!2sin" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+      
+    </div>
+   </div>
+   
+  
+  
+  </div>
+</div>
+<!--Address section 5 ends -->
+
+   <script>
+    function createFlowers() {
+        const container = document.querySelector('.wedding-card-container');
+        for (let i = 0; i < 10; i++) {
+          const flower = document.createElement('div');
+          flower.classList.add('flower');
+          flower.style.left = Math.random() * 100 + '%';
+          flower.style.top = Math.random() * 100 + '%';
+          flower.style.animationDelay = Math.random() * 5 + 's';
+          container.appendChild(flower);
+        }
+      }
+      
+      // Call this function when the page loads
+      window.addEventListener('load', createFlowers);
+   </script>
+</html>
